@@ -7,6 +7,7 @@
     <list default="true" id="8dd40f40-60b5-4b83-97e1-12f278ea4fa1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/css/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/css/modal.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/js/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/styles/js/modal.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +35,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Laura/Documents/Important/Formation/OpenClassRooms/Exo_cours&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Laura/Documents/Important/Code/Site/www&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -72,7 +73,13 @@
       <workItem from="1700216833070" duration="527000" />
       <workItem from="1700413129691" duration="291000" />
       <workItem from="1700561911161" duration="2458000" />
-      <workItem from="1700575366013" duration="5034000" />
+      <workItem from="1700575366013" duration="5729000" />
+      <workItem from="1700745649624" duration="2923000" />
+      <workItem from="1700819252863" duration="2729000" />
+      <workItem from="1700830416885" duration="614000" />
+      <workItem from="1701169724360" duration="11909000" />
+      <workItem from="1701268130082" duration="5866000" />
+      <workItem from="1701352289444" duration="3896000" />
     </task>
     <servers />
   </component>
