@@ -51,10 +51,17 @@ img {
   font-family: Roboto, sans-serif;
 }
 
+.fa {
+  color: #FF001B;
+}
+
 .topnav a:hover {
   background-color: #ff0000;
   color: #ffffff;
   border-radius: 15px;
+  .fa {
+    color: #FFFFFF;
+  }
 }
 
 .topnav a.active {
@@ -431,6 +438,7 @@ input[data-error]::after {
   font-weight: normal;
   font-size: 16px;
 }
+
 .hero-section {
   min-height: 41rem;;
   border-radius: 10px;
@@ -467,6 +475,7 @@ input[data-error]::after {
   font-weight: normal;
   white-space: nowrap;
 }
+
 .hero-text {
   width: 146%;
   font-weight: normal;
@@ -506,7 +515,7 @@ footer {
   padding-right: 2vw;
   margin: 0 20px;
 }
-@media screen and (max-width: 800px) {
+@media all and (min-width: 0px) and (max-width: 769px) {
   .hero-section {
     display: block;
     box-shadow: unset;
@@ -523,16 +532,24 @@ footer {
     display: none;
   }
   .hero-headline {
-    font-size: 4.5rem;
+    font-size: 6vh;
     white-space: normal;
   }
   .hero-text {
     width: unset;
     font-size: 1.5rem;
+    margin-top: 1rem;
   }
+  .hero-img {
+    margin-top: 40px;
+    /*height: 40rem;*/
+  }
+
   .hero-img img {
     border-radius: 10px;
-    margin-top: 40px;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
   }
   .hero-section > .btn-signup {
     display: block;
