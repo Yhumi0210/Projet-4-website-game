@@ -56,7 +56,6 @@ form.addEventListener("submit", (event) => {
     document.getElementById("firstNameError").innerText = ""; // Effacez le message d'erreur s'il y en a un
     console.log("Le prénom est valide.")
     baliseFirstName.classList.remove("error")
-    console.log("Prénom : ", baliseFirstName.value)
   } else {
     // Affiche un message d'erreur dans la div portant l'id "firstNameError"
     document.getElementById("firstNameError").innerText = "Veuillez saisir au moins 2 caractères.";
@@ -73,7 +72,6 @@ form.addEventListener("submit", (event) => {
     document.getElementById("lastNameError").innerText = ""; // Effacez le message d'erreur s'il y en a un
     console.log("Le nom est valide.")
     baliseLastName.classList.remove("error")
-    console.log("Nom : ", baliseLastName.value)
   } else {
     // Affiche un message d'erreur dans la div portant l'id "lastNameError"
     document.getElementById("lastNameError").innerText = "Veuillez saisir au moins 2 caractères.";
@@ -96,7 +94,6 @@ form.addEventListener("submit", (event) => {
     document.getElementById("mailError").innerText = ""; // Effacez le message d'erreur s'il y en a un
     console.log("L'e-mail est valide.")
     baliseEmail.classList.remove("error")
-    console.log("Email : ", baliseEmail.value)
   } else {
     // Affiche un message d'erreur dans la div portant l'id "mailError"
     document.getElementById("mailError").innerText = "L'adresse e-mail est invalide.";
@@ -130,8 +127,7 @@ form.addEventListener("submit", (event) => {
   if (isDateValid(birthdateValue)) {
       document.getElementById("birthError").innerText = ""; // Effacez le message d'erreur s'il y en a un
       console.log("La date de naissance est valide.")
-    baliseBirthdate.classList.remove("error")
-      console.log("Date de naissance : ", baliseBirthdate.value)
+      baliseBirthdate.classList.remove("error")
     } else {
     // Affiche un message d'erreur dans la div portant l'id "birthError"
       document.getElementById("birthError").innerText = "La date de naissance est invalide.";
@@ -154,7 +150,6 @@ form.addEventListener("submit", (event) => {
     document.getElementById("numberError").innerText = ""; // Effacez le message d'erreur s'il y en a un
     console.log("Le nombre de participation est valide.")
     baliseNumberParticipation.classList.remove("error")
-    console.log("Nombre de participation : ", baliseNumberParticipation.value)
   } else {
     // Affiche un message d'erreur dans la div portant l'id "numberError"
     document.getElementById("numberError").innerText = "Veuillez saisir au moins un nombre.";
@@ -219,49 +214,50 @@ form.addEventListener("submit", (event) => {
 
   if (isCheckboxConditionsChecked) {
     document.getElementById("checkbox1Error").innerText = ""
-    console.log("Les conditions générales d'utilisation sont acceptés.")
   } else {
     // Affiche un message d'erreur dans la div portant l'id "checkbox1Error"
     document.getElementById("checkbox1Error").innerText = "Veuillez accepter les conditions d'utilisation."
   }
 
-// Récupérer la checkbox "Prochains évènements"
-  let checkboxConditions2 = document.getElementById("checkbox2");
-
-// Vérifier si la checkbox "Prochains évènements" est cochée
-  let isCheckboxConditionsChecked2 = checkboxConditions2.checked;
-
-  if (isCheckboxConditionsChecked2) {
-    document.getElementById("checkbox2Error").innerText = "";
-    console.log("Le/La participant-e souhaite être prévenu des prochains évènements.")
-  } else {
-    // Affiche un message d'erreur dans la div portant l'id "checkbox2Error"
-    document.getElementById("checkbox2Error").innerText = "Êtes-vous sur de ne pas vouloir être informé des prochains évènements ?"
-    console.log("Le/La participant-e ne souhaite pas être prévenu des prochains évènements.")
-  }
-
 // Affichage de la fênetre de confirmation du formulaire
 
+  // Vérifie si tous les champs sont valides
+      if (
+        validName(first)
+        && validName(last)
+        && validEmail(email)
+        && isDateValid(birthdateValue)
+        && validNumberParticipation(quantity)
+        && isRadioButtonChecked
+        && isCheckboxChecked
+      ) {
+        console.log("Prénom : ", baliseFirstName.value)
+        console.log("Nom : ", baliseLastName.value)
+        console.log("Email : ", baliseEmail.value)
+        console.log("Date de naissance : ", baliseBirthdate.value)
+        console.log("Nombre de participation : ", baliseNumberParticipation.value)
+        console.log("Les conditions générales d'utilisation sont acceptés.")
 
-//   function validForm() {
-      if (isCheckboxConditionsChecked) {
-        let removeForm = document.querySelector(".formDataRemove")
-        while (removeForm.firstChild) {
-          removeForm.removeChild(removeForm.firstChild)
-        }
-        const message = document.getElementById("message")
+        form.reset()
+        form.style.display = "none"
 
-        message.classList.add("thanks")
-        message.innerText = "Merci pour votre inscription"
+        let messageThanks = document.querySelector(".thanks")
+        messageThanks.style.display = "flex"
 
-        const buttonForm = document.getElementById("btn-submit")
-        buttonForm.value = "Fermer"
-        buttonForm.addEventListener("click", () => {
-          // Fermez la modale en changeant son style display à 'none'
-          modalbg.style.display = "none"
-        })
-
+        document.querySelector(".thanks button")
+            .addEventListener("click", () => {
+              modalbg.style.display = "none"
+              form.style.display = "block"
+              messageThanks.style.display = "none"
+            })
+      } else {
+        console.log("Certains champs ne sont pas valides")
       }
+
+// responsive
+  // vérifier erreur dans la console
+
+
 
 })
 
