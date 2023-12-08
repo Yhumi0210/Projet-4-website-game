@@ -7,6 +7,7 @@
     <list default="true" id="8dd40f40-60b5-4b83-97e1-12f278ea4fa1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/css/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/css/modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/js/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/styles/js/modal.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +34,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Laura/Documents/Important/Code/Site/www&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Laura/Documents/Important/Formation/OpenClassRooms/04.Créer une landing page avec JavaScript/Projet_4_GameOn-website/starterOnly/Projet-4-website-game&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -79,7 +80,13 @@
       <workItem from="1701268130082" duration="5866000" />
       <workItem from="1701352289444" duration="4766000" />
       <workItem from="1701379230590" duration="367000" />
-      <workItem from="1701421893978" duration="9160000" />
+      <workItem from="1701421893978" duration="9286000" />
+      <workItem from="1701693190257" duration="3238000" />
+      <workItem from="1701805571480" duration="96000" />
+      <workItem from="1701805810477" duration="629000" />
+      <workItem from="1701882611991" duration="69000" />
+      <workItem from="1701963293829" duration="897000" />
+      <workItem from="1702027982919" duration="354000" />
     </task>
     <servers />
   </component>

@@ -515,6 +515,7 @@ footer {
   padding-right: 2vw;
   margin: 0 20px;
 }
+
 @media all and (min-width: 0px) and (max-width: 769px) {
   .hero-section {
     display: block;

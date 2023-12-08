@@ -1,14 +1,15 @@
+// Fonction du menu burger en responsive
 function editNav() {
-  var x = document.getElementById("myTopnav");
+  var x = document.getElementById("myTopnav")
   if (x.className === "topnav") {
-    x.className += " responsive";
+    x.className += " responsive"
   } else {
-    x.className = "topnav";
+    x.className = "topnav"
   }
 }
 
 // DOM Elements
-const modalbg = document.querySelector(".bground");
+const modalbg = document.querySelector(".bground")
 const modalBtn = document.querySelectorAll(".modal-btn")
 console.log(modalBtn)
 const formData = document.querySelectorAll(".formData")
@@ -28,8 +29,6 @@ function launchModal() {
 // Sélectionner le bouton de fermeture
 const closeModalBg = document.querySelector(".close")
 
-// Sélectionner la modale
-// const modalbg = document.querySelector(".bground")
 // Ajouter un écouteur d'événement au click
 closeModalBg.addEventListener("click", () => {
   // Fermez la modale en changeant son style display à 'none'
@@ -37,7 +36,7 @@ closeModalBg.addEventListener("click", () => {
 })
 
 // Deuxième étape : récupérer les input getElementById
-// ajouter des écouteurs click, change, input(réagis dès qu'on tape quelquechose),
+// ajouter des écouteurs click, change, input(réagit dès qu'on tape quelquechose),
 // submit(sans recharger la page)
 // récupérer les valeurs de ce qu'on tape dans les champs console.log(   .value)
 // pour y ajouter des vérifications
@@ -53,7 +52,7 @@ form.addEventListener("submit", (event) => {
     return name.length >= 2
   }
   if (validName(first)) {
-    document.getElementById("firstNameError").innerText = ""; // Effacez le message d'erreur s'il y en a un
+    document.getElementById("firstNameError").innerText = "" // Efface le message d'erreur s'il y en a un
     console.log("Le prénom est valide.")
     baliseFirstName.classList.remove("error")
   } else {
