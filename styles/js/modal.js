@@ -195,18 +195,8 @@ form.addEventListener("submit", (event) => {
 
   // Quatrième étape : vérifier si les checks sont cochés ou non.
 
-  let listBoxCheck = Array.from(document.querySelectorAll(".formData input[type=checkbox]"))
-
-// Vérifier si au moins une checkbox est cochée
-  let isCheckboxChecked = listBoxCheck.some(btn => btn.checked)
-
-// Récupérer la checkbox "Conditions d'utilisation" est cochée
+  // Récupérer la checkbox "Conditions d'utilisation" est cochée
   let checkboxConditions = document.getElementById("checkbox1")
-
-// Afficher un message d'erreur si aucune checkbox n'est cochée
-  if (!isCheckboxChecked) {
-    document.getElementById("checkbox1Error").innerText = "Veuillez cocher au moins une checkbox."
-  }
 
 // Vérifier si la checkbox "Conditions d'utilisation" est cochée
   let isCheckboxConditionsChecked = checkboxConditions.checked
@@ -228,7 +218,7 @@ form.addEventListener("submit", (event) => {
         && isDateValid(birthdateValue)
         && validNumberParticipation(quantity)
         && isRadioButtonChecked
-        && isCheckboxChecked
+        && isCheckboxConditionsChecked
       ) {
         console.log("Prénom : ", baliseFirstName.value)
         console.log("Nom : ", baliseLastName.value)
