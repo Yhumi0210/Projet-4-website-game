@@ -165,7 +165,7 @@ form.addEventListener("submit", (event) => {
   let listBtnRadioArray = Array.from(listBtnRadio)
 
   // Initialise une variable pour savoir si un bouton radio est coché
-  let isRadioButtonChecked = false;
+  let isRadioButtonChecked = false
 
   for (let index = 0; index < listBtnRadioArray.length; index++) {
     if (listBtnRadioArray[index].checked) {
@@ -173,15 +173,15 @@ form.addEventListener("submit", (event) => {
       document.getElementById("cityError").innerText = ""; // Effacer le message d'erreur si nécessaire
       console.log("Ville souhaitée : ", listBtnRadioArray[index].value)
       listBtnRadioArray[index].classList.remove("error-checkbox")
-      isRadioButtonChecked = true;
-      break;
+      isRadioButtonChecked = true
+      break
     }
   }
 
   // Afficher un message d'erreur si aucun bouton radio n'est coché
   if (!isRadioButtonChecked) {
     // Affiche un message d'erreur dans la div portant l'id "cityError"
-    document.getElementById("cityError").innerText = "Veuillez sélectionner une ville.";
+    document.getElementById("cityError").innerText = "Veuillez sélectionner une ville."
     console.error("Veuillez sélectionner une ville.")
 
     for (let index = 0; index < listBtnRadioArray.length; index++) {
