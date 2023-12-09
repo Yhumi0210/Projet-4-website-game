@@ -163,6 +163,11 @@ main {
   font-size: 16px;
 }
 
+.logo {
+  width: auto;
+  height: auto;
+}
+
 /* Règles liées au Javascript */
 
 .error {
@@ -188,63 +193,6 @@ main {
 .thanks button {
   position: absolute;
   bottom: 0;
-}
-
-@media all and (min-width: 0px) and (max-width: 769px) {
-  .hero-section {
-    display: block;
-    box-shadow: unset;
-  }
-  .hero-content {
-    background: #fff;
-    color: #000;
-    padding: 20px;
-  }
-  .hero-content::after {
-    content: unset;
-  }
-  .hero-content .btn-signup {
-    display: none;
-  }
-  .hero-headline {
-    font-size: 6vh;
-    white-space: normal;
-  }
-  .hero-text {
-    width: unset;
-    font-size: 1.5rem;
-    margin-top: 1rem;
-  }
-  .hero-img {
-    margin-top: 40px;
-    /*height: 40rem;*/
-  }
-
-  .hero-img img {
-    border-radius: 10px;
-    height: auto;
-    width: 100%;
-    object-fit: cover;
-  }
-  .hero-section > .btn-signup {
-    display: block;
-    margin: 32px auto 10px;
-    padding: 12px 35px;
-  }
-  .copyrights {
-    margin-top: 50px;
-    text-align: center;
-  }
-}
-
-@keyframes modalopen {
-  from {
-    opacity: 0;
-    transform: translateY(-150px);
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /* Fin des règles ajoutées */
@@ -575,5 +523,62 @@ footer {
   margin: 0 20px;
 }
 
+/* responsive */
 
+@media all and (min-width: 0px) and (max-width: 769px) {
+  .hero-section {
+    display: block;
+    box-shadow: unset;
+  }
+  .hero-content {
+    background: #fff;
+    color: #000;
+    padding: 20px;
+  }
+  .hero-content::after {
+    content: unset;
+  }
+  .hero-content .btn-signup {
+    display: none;
+  }
+  .hero-headline {
+    font-size: 6vh;
+    white-space: normal;
+  }
+  .hero-text {
+    width: unset;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .hero-img {
+    margin-top: 40px;
+    /*height: 40rem;*/
+  }
+
+  .hero-img img {
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+  .hero-section > .btn-signup {
+    display: block;
+    margin: 32px auto 10px;
+    padding: 12px 35px;
+  }
+  .copyrights {
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  to {
+    opacity: 1;
+  }
+}
 
