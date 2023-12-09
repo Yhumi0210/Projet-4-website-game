@@ -57,7 +57,7 @@ form.addEventListener("submit", (event) => {
     baliseFirstName.classList.remove("error")
   } else {
     // Affiche un message d'erreur dans la div portant l'id "firstNameError"
-    document.getElementById("firstNameError").innerText = "Veuillez saisir au moins 2 caractères.";
+    document.getElementById("firstNameError").innerText = "Veuillez saisir au moins 2 caractères."
     console.error("Veuillez saisir au moins 2 caractères.")
     // Ajoute la classe error
     baliseFirstName.classList.add("error")
@@ -68,12 +68,12 @@ form.addEventListener("submit", (event) => {
   let last = baliseLastName.value
 
   if (validName(last)) {
-    document.getElementById("lastNameError").innerText = ""; // Effacez le message d'erreur s'il y en a un
+    document.getElementById("lastNameError").innerText = "" // Efface le message d'erreur s'il y en a un
     console.log("Le nom est valide.")
     baliseLastName.classList.remove("error")
   } else {
     // Affiche un message d'erreur dans la div portant l'id "lastNameError"
-    document.getElementById("lastNameError").innerText = "Veuillez saisir au moins 2 caractères.";
+    document.getElementById("lastNameError").innerText = "Veuillez saisir au moins 2 caractères."
     console.error("Veuillez saisir au moins 2 caractères.")
     // Ajoute la classe error
     baliseLastName.classList.add("error")
@@ -90,12 +90,12 @@ form.addEventListener("submit", (event) => {
     return false
   }
   if (validEmail(email)) {
-    document.getElementById("mailError").innerText = ""; // Effacez le message d'erreur s'il y en a un
+    document.getElementById("mailError").innerText = "" // Efface le message d'erreur s'il y en a un
     console.log("L'e-mail est valide.")
     baliseEmail.classList.remove("error")
   } else {
     // Affiche un message d'erreur dans la div portant l'id "mailError"
-    document.getElementById("mailError").innerText = "L'adresse e-mail est invalide.";
+    document.getElementById("mailError").innerText = "L'adresse e-mail est invalide."
     console.error("L'adresse e-mail est invalide.")
     // Ajoute la classe error
     baliseEmail.classList.add("error")
@@ -124,12 +124,12 @@ form.addEventListener("submit", (event) => {
   let birthdateValue = baliseBirthdate.value
 
   if (isDateValid(birthdateValue)) {
-      document.getElementById("birthError").innerText = ""; // Effacez le message d'erreur s'il y en a un
+      document.getElementById("birthError").innerText = "" // Efface le message d'erreur s'il y en a un
       console.log("La date de naissance est valide.")
       baliseBirthdate.classList.remove("error")
     } else {
     // Affiche un message d'erreur dans la div portant l'id "birthError"
-      document.getElementById("birthError").innerText = "La date de naissance est invalide.";
+      document.getElementById("birthError").innerText = "La date de naissance est invalide."
       console.error("La date de naissance est invalide.")
     // Ajoute la classe error
     baliseBirthdate.classList.add("error")
@@ -146,12 +146,12 @@ form.addEventListener("submit", (event) => {
     return false
   }
   if (validNumberParticipation(quantity)) {
-    document.getElementById("numberError").innerText = ""; // Effacez le message d'erreur s'il y en a un
+    document.getElementById("numberError").innerText = "" // Efface le message d'erreur s'il y en a un
     console.log("Le nombre de participation est valide.")
     baliseNumberParticipation.classList.remove("error")
   } else {
     // Affiche un message d'erreur dans la div portant l'id "numberError"
-    document.getElementById("numberError").innerText = "Veuillez saisir au moins un nombre.";
+    document.getElementById("numberError").innerText = "Veuillez saisir au moins un nombre."
     console.error("Veuillez saisir au moins un nombre.")
     // Ajoute la classe error
     baliseNumberParticipation.classList.add("error")
@@ -170,7 +170,7 @@ form.addEventListener("submit", (event) => {
   for (let index = 0; index < listBtnRadioArray.length; index++) {
     if (listBtnRadioArray[index].checked) {
       // Affiche le choix sélectionné
-      document.getElementById("cityError").innerText = ""; // Effacer le message d'erreur si nécessaire
+      document.getElementById("cityError").innerText = "" // Efface le message d'erreur si nécessaire
       console.log("Ville souhaitée : ", listBtnRadioArray[index].value)
       listBtnRadioArray[index].classList.remove("error-checkbox")
       isRadioButtonChecked = true
@@ -208,7 +208,8 @@ form.addEventListener("submit", (event) => {
     document.getElementById("checkbox1Error").innerText = "Veuillez accepter les conditions d'utilisation."
   }
 
-// Affichage de la fênetre de confirmation du formulaire
+  // Dernière étape : Vérification du formulaire et affichage de la fenêtre de remerciement
+  // Affichage de la fênetre de confirmation du formulaire
 
   // Vérifie si tous les champs sont valides
       if (
@@ -242,15 +243,5 @@ form.addEventListener("submit", (event) => {
       } else {
         console.log("Certains champs ne sont pas valides")
       }
-
-// responsive
-  // vérifier erreur dans la console
-
-
-
-})
-
-
-
-
+      })
 
